@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- initial-scale=1.0 -->
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link class="link1" rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title class="title1">Growth Factor Database</title>
+  </head>
+  <body>
+    
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script type="text/javascript">
+  
+    var systemInfoName = JSON.parse(localStorage.getItem('sysInfo')).sys_name
+    if(systemInfoName) {
+      document.getElementsByClassName('title1')[0].innerText = systemInfoName
+    } else {
+      document.getElementsByClassName('title1')[0].innerText =  'Growth Factor Database'
+    }
+
+    var systemInfoIcon = JSON.parse(localStorage.getItem('sysInfo')).logo
+
+    if(systemInfoIcon) {
+      document.getElementsByClassName('link1')[0].href = systemInfoIcon
+    } else {
+      document.getElementsByClassName('link1')[0].innerText = window.location.origin + 'favicon.ico'
+    }
+    
+  </script>
+</html>
