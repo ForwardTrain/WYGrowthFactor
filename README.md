@@ -67,7 +67,7 @@ WYGrowthFactor/
 | 可视化 | ECharts 4.9、ECharts GL、World Map |
 | HTTP | Axios |
 | 富文本 | @vueup/vue-quill |
-| 其他 | qiniu-js（七牛云上传）、qrcode.vue |
+| 其他 | qiniu-js、qrcode.vue |
 | 构建 | Vue CLI 5、Babel、Sass |
 
 ### 后端（wz_growth）
