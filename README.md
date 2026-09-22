@@ -27,12 +27,12 @@ consisting of two sub-projects:
 ## Project Structure
 
     WYGrowthFactor/
-    ├── wz-medical/          # Front-end (Vue 3)
+    ├── WYGrowthWeb/          # Front-end (Vue 3)
     │   ├── package.json     # Dependencies and scripts
     │   ├── vue.config.js    # Build and proxy configuration
     │   ├── public/          # Static resources
     │   └── src/             # Source code
-    └── wz_growth/           # Back-end (Maven multi-module)
+    └── WYGrowthJava/           # Back-end (Maven multi-module)
         ├── pom.xml          # Parent POM
         ├── web/             # Web layer
         ├── service/         # Business logic layer
